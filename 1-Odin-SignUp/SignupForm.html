@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo-banner">
+
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f5f5f5'/%3E%3Cpath d='M30 25 L45 40 L40 55 L25 40 L30 25 Z' fill='%23333'/%3E%3Cpath d='M70 25 L55 40 L60 55 L75 40 L70 25 Z' fill='%23333'/%3E%3Ccircle cx='50' cy='45' r='12' fill='%23596D48'/%3E%3Ccircle cx='42' cy='43' r='4' fill='white'/%3E%3Ccircle cx='58' cy='43' r='4' fill='white'/%3E%3C/svg%3E"
+            alt="Odin logo" />
+            <h1>ODIN</h1>
+        </div>
+        <div class="photo-credit">
+            Photo by <a href="https://unsplash.com/@halie_west?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Halie West</a> on Unsplash
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="intro-text">
+            <p><strong>This is not a real online service!</strong> You know you need something<br />
+            like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p class="small-note">You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-card">
+            <h2>Let's do this!</h2>
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="firstName">First name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Thor" autocomplete="given-name" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="lastName">Last name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Oldinson" autocomplete="family-name" required />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="thor@asgard.com" autocomplete="email" required />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" autocomplete="tel" />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="new-password" required minlength="8" />
+                        <span class="hint">* 8+ characters (red border if invalid)</span>
+                    </div>
+                    <div class="field-group">
+                        <label for="confirmPassword">Confirm password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" autocomplete="new-password" required minlength="8" />
+                        <span class="hint">* must match password</span>
+                    </div>
+                </div>
+
+                <div class="action-row">
+                    <button type="submit" class="btn-create">Create Account</button>
+                    <div class="login-link">
+                        Already have an account? <a href="#">Log in</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
