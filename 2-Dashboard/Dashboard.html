@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard · Grid Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Dashboard.css">
+
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="material-icons">dashboard</span>
+        <span>Dashboard</span>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-item">
+          <span class="material-icons">home</span> Home
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">account_circle</span> Profile
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">message</span> Messages
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">history</span> History
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">task</span> Tasks
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">groups</span> Communities
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">settings</span> Settings
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">help</span> Support
+        </div>
+        <div class="nav-item">
+          <span class="material-icons">privacy_tip</span> Privacy
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span class="material-icons" style="font-size: 1.2rem; color: #cfe3f5">shield</span>
+        <span>v2.0 · Odin</span>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header-top">
+        <div class="search-wrapper">
+          <span class="material-icons">search</span>
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="profile-top">
+          <span class="material-icons">notifications</span>
+          <span class="material-icons">circle</span>
+          <div class="avatar-sm">T</div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="greeting">
+          <div class="avatar-lg">T</div>
+          <div class="greeting-text">
+            <small>Hi there,</small>
+            <strong>Thor Odinson (@thor)</strong>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="projects-section">
+        <h3>Your Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4>Super Cool Project</h4>
+            <p>
+              Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+              erat, id facilisis felis accumsan nec.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Impossible App</h4>
+            <p>
+              In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+              placerat velit sagittis id.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Ad Blocker</h4>
+            <p>
+              Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+              pharetra hendrerit felis.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Less Cool Project</h4>
+            <p>
+              Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque
+              sed dolor tincidunt, consectetur sapien et.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Easy Peasy App</h4>
+            <p>
+              Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+              urna eget accumsan aliquam.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Money Maker</h4>
+            <p>
+              Praesent convallis, libero quis congue elementum, nunc ante
+              faucibus sapien, ac scelerisque tortor.
+            </p>
+            <div class="project-icons">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="right-panel">
+        <div class="announcements">
+          <h3>Announcements</h3>
+          <div>
+            <div class="announce-item">
+              <h5>Site Maintenance</h5>
+              <p>
+                Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                ac. Donec hendrerit sodales congue...
+              </p>
+            </div>
+            <div class="announce-item">
+              <h5>Community Share Day</h5>
+              <p>
+                Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                Aliquam dictum accumsan porttitor...
+              </p>
+            </div>
+            <div class="announce-item">
+              <h5>Updated Privacy Policy</h5>
+              <p>
+                Phasellus efficitur nisi eget elit consectetur, eget condimentum
+                ante auctor. Cras fringilla sagittis sem...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trending">
+          <h3>Trending</h3>
+          <div>
+            <div class="trend-item">
+              <div class="trend-avatar avatar-purple">@t</div>
+              <div class="trend-info">
+                <span class="handle">@tegan</span>
+                <span class="desc">World Peace Builder</span>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-avatar avatar-green">@m</div>
+              <div class="trend-info">
+                <span class="handle">@morgan</span>
+                <span class="desc">Super Cool Project</span>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-avatar avatar-pink">@k</div>
+              <div class="trend-info">
+                <span class="handle">@kendall</span>
+                <span class="desc">Life Changing App</span>
+              </div>
+            </div>
+            <div class="trend-item">
+              <div class="trend-avatar avatar-orange">@a</div>
+              <div class="trend-info">
+                <span class="handle">@alex</span>
+                <span class="desc">No Traffic Maker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
