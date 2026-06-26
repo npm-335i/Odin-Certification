@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library · Book Manager</title>
+    <link rel="stylesheet" href="./Library.css" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Library</h1>
+            <button class="btn-new" id="newBookBtn">+ New Book</button>
+        </header>
+
+        <div class="library-grid" id="libraryContainer">
+
+        </div>
+    </div>
+
+    <dialog id="bookDialog">
+        <div class="modal-content">
+            <h2>Add a New Book</h2>
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required placeholder="The Hobbit" />
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required placeholder="J.R.R. Tolkien" />
+                </div>
+                <div class="form-group">
+                    <label for="pages">Number of Pages</label>
+                    <input type="number" id="pages" name="pages" required min="1" placeholder="310" />
+                </div>
+                <div class="form-group-check">
+                    <input type="checkbox" id="readStatus" name="readStatus" />
+                    <label for="readStatus">I have read this book</label>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn-submit">Add Book</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+
+</body>
+<script src="./Library.js"></script>
+</html>
