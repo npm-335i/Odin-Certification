@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe · Module Pattern</title>
+    <link rel="stylesheet" href="./Game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="subtitle">Module Pattern · IIFE</div>
+
+        <div class="player-setup">
+            <label>
+                Player X
+                <input type="text" id="playerXName" value="Alice" placeholder="X name" />
+                <span class="marker-badge">X</span>
+            </label>
+            <label>
+                Player O
+                <input type="text" id="playerOName" value="Bob" placeholder="O name" />
+                <span class="marker-badge">O</span>
+            </label>
+        </div>
+
+        <div class="board" id="boardContainer">
+        </div>
+
+        <div class="status-area" id="statusDisplay">
+            <span class="turn-indicator">X's turn</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn-primary" id="startBtn">Start Game</button>
+            <button class="btn-reset" id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    
+</body>
+<script src="./Game.js"></script>
+</html>
