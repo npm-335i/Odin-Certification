@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo · Project Manager</title>
+    <link rel="stylesheet" href="./Todo.css" />
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <h2>Projects</h2>
+        <div class="project-list" id="projectList"></div>
+        <button class="add-project-btn" id="addProjectBtn">+ New Project</button>
+    </aside>
+
+    <main class="main">
+        <div class="main-header">
+            <div>
+                <h1 id="projectTitle">Default</h1>
+                <span class="todo-count" id="todoCount">0 todos</span>
+            </div>
+            <button class="btn-add-todo" id="addTodoBtn">+ Add Todo</button>
+        </div>
+        <div class="todo-list" id="todoList"></div>
+    </main>
+
+    <dialog id="todoDialog">
+        <div class="modal-content">
+            <h2 id="todoDialogTitle">New Todo</h2>
+            <form id="todoForm">
+                <div class="form-group">
+                    <label for="todoTitle">Title *</label>
+                    <input type="text" id="todoTitle" required placeholder="Learn JavaScript" />
+                </div>
+                <div class="form-group">
+                    <label for="todoDesc">Description</label>
+                    <textarea id="todoDesc" placeholder="Details..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="todoDue">Due Date</label>
+                    <input type="date" id="todoDue" />
+                </div>
+                <div class="form-group">
+                    <label for="todoPriority">Priority</label>
+                    <select id="todoPriority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group" style="flex-direction:row;align-items:center;gap:0.6rem;margin-top:-0.2rem;">
+                    <input type="checkbox" id="todoCompleted" />
+                    <label for="todoCompleted" style="text-transform:none;font-weight:500;font-size:0.9rem;">Completed</label>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="todoCancelBtn">Cancel</button>
+                    <button type="submit" class="btn-primary" id="todoSubmitBtn">Save</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog id="projectDialog">
+        <div class="modal-content">
+            <h2>New Project</h2>
+            <form id="projectForm">
+                <div class="form-group">
+                    <label for="projectName">Project Name *</label>
+                    <input type="text" id="projectName" required placeholder="Work, Personal, ..." />
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="projectCancelBtn">Cancel</button>
+                    <button type="submit" class="btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+
+</body>
+<script src="./Todo.js"></script>
+</html>
