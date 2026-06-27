@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather - By Uzair</title>
+
+    <link rel="stylesheet" href="./Weather.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Weather</h1>
+
+      <p class="sub">Check current conditions anywhere</p>
+
+      <form class="search-form" id="weatherForm">
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="City, country"
+          required
+        />
+
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="loading" id="loadingIndicator">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p>Fetching forecast...</p>
+      </div>
+
+      <div class="error-msg" id="errorMsg">
+        Could not find that location. Try again.
+      </div>
+
+      <section class="weather-card" id="weatherCard">
+        <div class="location-name" id="locationName">
+          --
+          <small id="countryName"></small>
+        </div>
+
+        <div class="weather-main">
+          <div class="weather-icon" id="weatherIcon">Weather</div>
+
+          <div class="weather-temp" id="tempDisplay">
+            --
+            <small>°C</small>
+          </div>
+
+          <div class="weather-desc" id="descDisplay">--</div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-item">
+            <span class="label"> Humidity </span>
+
+            <span class="value" id="humidityVal"> -- </span>
+          </div>
+
+          <div class="detail-item">
+            <span class="label"> Wind </span>
+
+            <span class="value" id="windVal"> -- </span>
+          </div>
+
+          <div class="detail-item">
+            <span class="label"> Feels Like </span>
+
+            <span class="value" id="feelsVal"> -- </span>
+          </div>
+
+          <div class="detail-item">
+            <span class="label"> Pressure </span>
+
+            <span class="value" id="pressureVal"> -- </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./Weather.js" defer></script>
+  </body>
+</html>
